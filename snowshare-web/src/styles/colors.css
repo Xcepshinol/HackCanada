@@ -1,0 +1,44 @@
+:root {
+    --primary-color: #1D4ED8; /* Blue */
+    --secondary-color: #9333EA; /* Purple */
+    --accent-color: #FBBF24; /* Yellow */
+    --background-color: #F9FAFB; /* Light Gray */
+    --text-color: #111827; /* Dark Gray */
+    --border-color: #E5E7EB; /* Gray */
+}
+
+.bg-primary {
+    background-color: var(--primary-color);
+}
+
+.bg-secondary {
+    background-color: var(--secondary-color);
+}
+
+.bg-accent {
+    background-color: var(--accent-color);
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+.text-accent {
+    color: var(--accent-color);
+}
+
+.border-primary {
+    border-color: var(--primary-color);
+}
+
+.border-secondary {
+    border-color: var(--secondary-color);
+}
+
+.border-accent {
+    border-color: var(--accent-color);
+}

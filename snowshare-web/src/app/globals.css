@@ -1,0 +1,46 @@
+/* stylelint-disable at-rule-no-unknown */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* stylelint-enable at-rule-no-unknown */
+
+/* Theme variables (used in custom CSS) */
+:root {
+    --color-brand:  #0ea5e9; /* sky-500 */
+    --color-brand-dark: #0369a1; /* sky-700 */
+    --color-bg: #f1f5f9; /* slate-100 */
+    --color-text: #0f172a; /* slate-900 */
+    --color-muted: #475569; /* slate-600 */
+}
+
+/* Global styles */
+body {
+        /* pale background, readable text, slightly larger base size for accessibility */
+        @apply bg-slate-100 text-slate-800 font-sans text-lg antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+}
+
+a {
+    @apply text-sky-600 hover:text-sky-800;
+}
+
+ul {
+    @apply list-disc pl-5;
+}
+
+button {
+    @apply cursor-pointer;
+}
+
+/* Utility card style used across the app */
+.card {
+    @apply bg-white rounded-2xl shadow-sm p-4;
+}
+
+/* Consistent container width */
+.container {
+    @apply mx-auto max-w-7xl px-4;
+}

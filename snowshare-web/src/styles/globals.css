@@ -1,0 +1,51 @@
+/* stylelint-disable at-rule-no-unknown */
+/* This file is processed by PostCSS + Tailwind during build; editor linters may flag @tailwind/@apply without PostCSS support. */
+/* Font imports MUST come first */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+/* Include Tailwind directives directly so PostCSS processes them when this file is imported by layout.tsx */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Project-level styles */
+@import './colors.css';
+@import './shared.css';
+
+/* App-level globals */
+html, body, #__next {
+  height: 100%;
+}
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg, #ffffff);
+  color: var(--text, #0f172a);
+  font-family: var(--font-sans, 'Roboto', 'Open Sans', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial);
+}
+
+/* Theme variables for blue/white theme */
+:root {
+  --color-brand:  #0ea5e9; /* sky-500 */
+  --color-brand-dark: #0369a1; /* sky-700 */
+  --color-bg: #f1f5f9; /* slate-100 */
+  --color-text: #0f172a; /* slate-900 */
+  --color-muted: #475569; /* slate-600 */
+}
+
+/* Simple utilities used across the app */
+.card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 1px 2px rgba(2,6,23,0.06);
+  padding: 1rem;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
